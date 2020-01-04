@@ -10,6 +10,8 @@ Adopt Me! React App following **Complete Intro to React!**, FrontendMasters cour
 
 > `npm i -D babel-eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react`
 
+> `npm i -D eslint-plugin-react-hooks`
+
 #### filename: `.eslintrc.json`
 
 ```
@@ -24,9 +26,11 @@ Adopt Me! React App following **Complete Intro to React!**, FrontendMasters cour
   ],
   "rules": {
     "react/prop-types": 0,
-    "no-console": 1
+    "no-console": 1,
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 1
   },
-  "plugins": ["react", "import", "jsx-a11y"],
+  "plugins": ["react", "import", "jsx-a11y", "react-hooks"],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
