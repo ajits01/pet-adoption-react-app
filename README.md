@@ -1,3 +1,18 @@
+# Adopt Me! React App
+
+Adopt Me! React App following **Complete Intro to React!**, FrontendMasters course.
+
+# Configurations
+
+### **Eslint**
+
+> `npm install -D eslint eslint-config-prettier`
+
+> `npm i -D babel-eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react`
+
+#### filename: `.eslintrc.json`
+
+```
 {
   "extends": [
     "eslint:recommended",
@@ -30,3 +45,4 @@
     }
   }
 }
+```
