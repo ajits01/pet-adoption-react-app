@@ -2,6 +2,8 @@
 
 Adopt Me! React App following **Complete Intro to React!**, FrontendMasters course.
 
+---
+
 # Configurations
 
 ### **Eslint**
@@ -49,4 +51,25 @@ Adopt Me! React App following **Complete Intro to React!**, FrontendMasters cour
     }
   }
 }
+```
+
+### **Babel**
+
+> `npm install -D babel-eslint @babel/core @babel/preset-env @babel/plugin-proposal-class-properties @babel/preset-react`
+
+#### filename: `.babelrc`
+
+```
+{
+  "presets": ["@babel/preset-react", "@babel/preset-env"],
+  "plugins": ["@babel/plugin-proposal-class-properties"]
+}
+```
+
+#### file: `.eslintrc.json`
+
+add following line:
+
+```
+  "parser": "babel-eslint",
 ```
