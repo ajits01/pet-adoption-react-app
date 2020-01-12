@@ -5,6 +5,7 @@ import SearchParams from "./SearchParams";
 import Details from "./Details";
 import ThemeContext from "./ThemeContext";
 import ThemeSelector from "./ThemeSelector";
+import NavBar from "./NavBar";
 
 const App = () => {
   const themeHook = useState("peru");
@@ -12,9 +13,7 @@ const App = () => {
     <React.StrictMode>
       <ThemeContext.Provider value={themeHook}>
         <div id="app-container">
-          <header>
-            <Link to="/">Adopt Me!</Link>
-          </header>
+          <NavBar />
           <ThemeSelector />
           <Router>
             <SearchParams path="/" />
