@@ -4,6 +4,9 @@
   "description": "Adopt Me Application with Reacts",
   "main": "index.js",
   "scripts": {
+    "build": "parcel build --public-url ./dist/ src/index.html",
+    "start": "npm run build && babel-node server/index.js",
+    "clear-build-cache": "rm -rf .cache/ dist/",
     "dev": "parcel src/index.html",
     "dev:mock": "cross-env PET_MOCK=mock npm run dev",
     "format": "prettier \"src/**/*.{js,html}\" --write",
@@ -32,10 +35,13 @@
     "prettier": "^1.19.1"
   },
   "dependencies": {
+    "@babel/node": "^7.8.0",
     "@emotion/babel-preset-css-prop": "^10.0.27",
     "@emotion/core": "^10.0.27",
     "@frontendmasters/pet": "^1.0.3",
     "@reach/router": "^1.2.1",
+    "babel-cli": "^6.26.0",
+    "express": "^4.17.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
